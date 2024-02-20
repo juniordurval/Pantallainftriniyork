@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingresar datos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo 2.css') }}">
+</head>
+<body>
+    <form action="{{ url_for('ingresar') }}" method="post" target="_self">
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="cuarto">Cuarto:</label><br>
+        <input type="text" id="cuarto" name="cuarto"><br>
+        <label for="camilla">Camilla:</label><br>
+        <input type="text" id="camilla" name="camilla"><br>
+        <label for="especialidad">Especialidad:</label><br>
+        <input type="text" id="especialidad" name="especialidad"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

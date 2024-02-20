@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo 1.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script> <!-- Aquí agregamos la biblioteca Socket.IO -->
+</head>
+<body>
+    <div class="half right">
+        <table id="header-table">
+            <tr>
+                <th>Nombre</th>
+                <th>Cuarto</th>
+                <th>Camilla</th>
+                <th>Especialidad</th>
+                <th>Acciones</th>
+            </tr>
+        </table>
+        <div id="table-container"> <!-- Aquí agregamos el contenedor de desplazamiento -->
+            <table id="table">
+                <!-- Aquí vamos a agregar las filas de la tabla desde el servidor -->
+            </table>
+        </div> <!-- Fin del contenedor de desplazamiento -->
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <a id="link" href="{{ url_for('ingresar') }}">by: nickpou</a>
+</body>
+</html>

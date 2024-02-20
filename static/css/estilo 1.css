@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #b3d9ff;
+}
+
+#table {
+    background-color: #75ace4;
+    color: white;
+    border-collapse: separate; 
+    border-spacing: 0 15px; 
+    width: 100%; 
+}
+
+#table td, #table th {
+    border: none; 
+    padding: 10px;
+    text-align: center;
+}
+
+
+#header-table th {
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    background-color: transparent; 
+}
+
+
+#table td {
+    font-size: 36px;
+    overflow-wrap: break-word;
+}
+
+
+#table td:nth-child(1), #table td:nth-child(4), #header-table th:nth-child(1), #header-table th:nth-child(4) {
+    width: 30%; 
+}
+
+
+#table td:nth-child(2), #table td:nth-child(3), #table td:nth-child(5), #header-table th:nth-child(2), #header-table th:nth-child(3), #header-table th:nth-child(5) {
+    width: 20%; 
+}
+
+
+#link {
+    background-color: #00cc00;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img, video {
+    object-fit: cover;
+}
+
+#table-container {
+    overflow: auto;
+    height: 90vh;
+}
+
+
+@keyframes desplazamiento {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+
+#table tbody {
+    animation: desplazamiento 120s linear infinite; 
+}
